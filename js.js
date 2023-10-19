@@ -58,7 +58,7 @@ for (var i = 0; i < columns; i++) {
 
 
 function draw() {
-    ctx.fillStyle = 'rgba(255, 255, 255, .1)';
+    ctx.fillStyle = 'rgba(0, 0, 0, .1)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.fillStyle = 'rgb(5, 130, 232)';
