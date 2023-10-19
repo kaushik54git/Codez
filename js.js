@@ -80,7 +80,39 @@ setInterval(draw, 33);
      
   
   
-  //-----------------------------------------------------------------------Percent--------------------------------------------------------------------
+function loadTextFile(filePath, containerId) {
+    fetch(filePath)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.text();
+      })
+      .then(text => {
+        const textContainer = document.getElementById(containerId);
+  
+        // Replace new lines with <br> tags
+        text = text.replace(/\n/g, '<br>');
+  
+        textContainer.innerHTML = text; // Use innerHTML to render <br> tags as line breaks
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }
+  
+  // Call the function to load and display the text file
+  loadTextFile('abttextfile.txt', 'text-container');
+  
   
   });
   
+
+
+
+
+
+
+
+
+
