@@ -16,27 +16,27 @@ body{
     height: auto;
 }
 
-.front{
-    
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-bottom:50px; 
-}
 
-
-#frontbg {
-  position: fixed;
-  background-color: white;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 
 
 /*-----------------------------------------------------------------------front bag----------------------------------------------------------*/
 
+.front{
+    
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom:50px; 
+}
 
+
+#frontbg {
+position: fixed;
+background-color: black;
+top: 0;
+left: 0;
+z-index: -1;
+}
 
 .codezlogo{
   height:100px;
@@ -107,9 +107,10 @@ body{
   height: fit-content;
   font-size: large;
   border-radius: 10px;
+  color: white;
   padding: 20px;
   max-width: 1000px;
-  background-color: rgba(47, 92, 255, 0.8);
+  background-color: rgba(47, 92, 255, 0.5);
 }
 
 
@@ -191,7 +192,7 @@ input,textarea{
   padding-left:20px ;
   height: 40px;
   font-size: larger;
-  color: black;
+  color: white;
   background-color: rgb(47, 92, 255,0.5);
   font-weight: 900;
   width: 500px;
@@ -241,4 +242,5 @@ textarea{
 
 .copyright{
   text-align: center;
+  color: white;
 }
