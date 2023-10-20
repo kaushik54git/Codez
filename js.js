@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
-setTimeout(() => {
-
-
   // typing 1
   const typed1 = new Typed(".typing1", {
       strings: [
@@ -13,12 +10,6 @@ setTimeout(() => {
       showCursor: false,
 
   });
-
-
-  const typingElements = document.querySelectorAll(".typing1");
-    for (const element of typingElements) {
-        element.style.backgroundColor = "rgba(0, 0, 0, 1)";
-    }
 
 
   // typing 2
@@ -31,7 +22,6 @@ setTimeout(() => {
 
 });
     
-}, 1800); 
 
 
 
