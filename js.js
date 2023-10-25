@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
 
+setTimeout(() => {
+
+
   // typing 1
   const typed1 = new Typed(".typing1", {
       strings: [
@@ -10,6 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
       showCursor: false,
 
   });
+
+
+  const typingElements = document.querySelectorAll(".typing1");
+    for (const element of typingElements) {
+        element.style.backgroundColor = "rgba(0, 0, 0, 1)";
+    }
 
 
   // typing 2
@@ -22,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
     
+}, 1800); 
 
 
 
@@ -65,38 +75,17 @@ function draw() {
 
 setInterval(draw, 33);
 
-
-
-//-----------------------------------------------------------------------text--------------------------------------------------------------------
-  
      
-  
-  
-function loadTextFile(filePath, containerId) {
-    fetch(filePath)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.text();
-      })
-      .then(text => {
-        const textContainer = document.getElementById(containerId);
-  
-        // Replace new lines with <br> tags
-        text = text.replace(/\n/g, '<br>');
-  
-        textContainer.innerHTML = text; // Use innerHTML to render <br> tags as line breaks
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-  }
-  
-  // Call the function to load and display the text file
-  loadTextFile('abttextfile.txt', 'text-container');
   
   
   });
   
+
+
+
+
+
+
+
+
 
