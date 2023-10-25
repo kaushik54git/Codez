@@ -66,14 +66,6 @@ z-index: -1;
   
 }
 
-.front2{
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-}
 
 .downl{
   font-family: "Rog fonts", sans-serif;
@@ -84,28 +76,86 @@ z-index: -1;
   padding: 5px;
   padding-left: 15px;
   padding-right:15px;
-  transition: 0.5s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.downl img{
+  height: 20px;
+  width: auto;
 }
 
 .downl a{
   color: rgb(0, 0, 0);
 }
 
+.downl a:hover{
+  color: white;
+
+}
+
 .downl:hover{
   background-color: rgb(5,130,232);
-  transition: 0.5s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
-#text-container{
-  height: fit-content;
-  font-size: large;
-  border-radius: 10px;
+/*---------------------------------------------------------------------Text---------------------------------------------------------------*/
+
+
+.msg1{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+
+#text-container1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  min-height: 150px;
+  font-size: x-large;
+  width: 100%;
   color: white;
   padding: 20px;
-  max-width: 1000px;
-  background-color: rgba(47, 92, 255, 0.5);
+  background-color: rgba(47, 92, 255,0.5);
+  gap: 50px;
 }
 
+#text-container2{
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  display: flex;
+  min-height: 150px;
+  font-size: x-large;
+  width: 100%;
+  color: rgb(47, 92, 255);
+  padding: 20px;
+  gap: 50px;
+}
+
+#text-container1 strong{
+  color: greenyellow;
+}
+
+#text-container2 strong{
+  color: white;
+}
+
+#text-container1 img,#text-container2 img{
+  height: 250px;
+  width: auto;
+  border-radius: 10px;
+}
+
+#text-container1 p,#text-container2 p{
+  height: auto;
+  max-width: 800px;
+}
 
 /*---------------------------------------------------------------------work---------------------------------------------------------------*/
 
@@ -208,6 +258,7 @@ textarea{
   border: black;
   color: greenyellow;
   background-color: black;
+  transition: 0.25s ease-in-out;
 }
 
 .btn-md:hover{
@@ -215,7 +266,7 @@ textarea{
   background-color:greenyellow;
   border: 2px solid black;
   color: black;
-  transition: 0.5s ease;
+  transition: 0.25s ease-in-out;
 }
 
 
