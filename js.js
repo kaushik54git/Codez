@@ -31,7 +31,7 @@ setTimeout(() => {
 
 });
     
-}, 800); 
+}, 1800); 
 
 
 
@@ -39,38 +39,34 @@ setTimeout(() => {
   //-----------------------------------------------------------------------frontbg--------------------------------------------------------------------
   
 
-var canvas = document.querySelector('#frontbg'),
-    ctx = canvas.getContext('2d');
+  var canvas = document.querySelector("#frontbg"),
+  ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var letters = 'CZ';
-letters = letters.split('');
-
 var fontSize = 10,
-    columns = canvas.width / fontSize;
+  columns = canvas.width / fontSize;
 
 var drops = [];
 for (var i = 0; i < columns; i++) {
-    drops[i] = 1;
+  drops[i] = Math.floor(Math.random() * canvas.height);
 }
 
-
 function draw() {
-    ctx.fillStyle = 'rgba(0, 0, 0, .1)';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "rgba(0, 0, 0, .1)";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = 'rgb(5, 130, 232)';
-    for (var i = 0; i < drops.length; i++) {
-        var text = letters[i % letters.length];
-        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-        drops[i]++;
+  ctx.fillStyle = "rgb(5, 130, 232)";
+  for (var i = 0; i < drops.length; i++) {
+    var text = String.fromCharCode(Math.floor(Math.random() * 255)); // Random character
+    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+    drops[i]++;
 
-        if (drops[i] * fontSize > canvas.height) {
-            drops[i] = 1; 
-        }
+    if (drops[i] * fontSize > canvas.height) {
+      drops[i] = 0;
     }
+  }
 }
 
 setInterval(draw, 33);
@@ -80,12 +76,3 @@ setInterval(draw, 33);
   
   });
   
-
-
-
-
-
-
-
-
-
