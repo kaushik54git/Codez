@@ -1,5 +1,3 @@
-Here is a **restructured and rewritten README** for your project, aiming to be visually appealing, clear, and professional:
-
 ***
 
 # Codez – Real-Time Project Collaboration App
@@ -66,8 +64,6 @@ Codez brings **your team and projects together** by eliminating context-switchin
 This project is licensed under the [MIT License](./LICENSE).
 
 ***
-
-Let me know if you'd like to add a **demo**, **screenshots**, or **usage instructions** for further enhancement!
 
 [1](https://github.com/kaushik54git/Codez)
 [2](https://github.com/kaushik54git/Codez/raw/refs/heads/main/README.md)
