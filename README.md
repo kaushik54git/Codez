@@ -2,7 +2,9 @@
 
 # Codez – Real-Time Project Collaboration App
 
-![codez-logo](codez-logo-1-ico.ico) to **Codez**, your all-in-one platform for seamless, efficient, and secure collaboration on real-time projects. Empower your team to communicate, share, and manage every aspect of your project from a single, unified workspace.
+![codez-logo](codez-logo-1-ico.ico) 
+
+<img src="![codez-logo](codez-logo-1-ico.ico)" width="48"> to **Codez**, your all-in-one platform for seamless, efficient, and secure collaboration on real-time projects. Empower your team to communicate, share, and manage every aspect of your project from a single, unified workspace.
 
 ***
 
